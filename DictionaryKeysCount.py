@@ -4,7 +4,7 @@ items = {
  'sausage':{'name': 'колбаса 1 кг.', 'count': 122, 'price': 1990.9}
 }
 
-def CountMore20(items : dict, key : str):
+def CountLess20(items : dict, key : str):
  if(items[key]['count'] < 20):
   return True
  else:
@@ -13,6 +13,6 @@ def CountMore20(items : dict, key : str):
 resultList = {}
 
 for key in items:
- resultList[key] = CountMore20(items, key)
+ resultList[key] = CountLess20(items, key)
 
 print(resultList)
